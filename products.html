@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Arya Exporters</title>
+    <meta name="description" content="Explore our premium agricultural products including grains, spices, and organic produce.">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="assets/logo.png" alt="Arya Exporters" class="logo-img">
+                    <span class="logo-text" data-translate="company_name">Arya Exporters</span>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link" data-translate="nav_home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="products.html" class="nav-link active" data-translate="nav_products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link" data-translate="nav_services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link" data-translate="nav_contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="tracking.html" class="nav-link" data-translate="nav_tracking">Tracking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link" data-translate="nav_about">About</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                    <div class="nav-toggle" id="nav-toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p class="page-tagline">We deliver trust over the products</p>
+            <p>Discover our premium rice and spices sourced from the finest farms worldwide</p>
+        </div>
+    </section>
+
+    <!-- Products Categories -->
+    <section class="products-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">All Products</button>
+                <button class="filter-btn" data-category="basmati">Basmati Rice</button>
+                <button class="filter-btn" data-category="non-basmati">Non-Basmati Rice</button>
+                <button class="filter-btn" data-category="spices">Spices</button>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Basmati Rice Products -->
+                <div class="product-item" data-category="basmati">
+                    <img src="assets/products/1121.jpg" alt="1121 Basmati Rice" class="product-image">
+                    <div class="product-info">
+                        <h3>1121 Basmati Rice</h3>
+                        <p>World’s longest-grain basmati, highly aromatic, in demand across Middle East & West.</p>
+                        <div class="product-specs">
+                            <span class="spec">Origin: India</span>
+                            <span class="spec">Grain: Extra-Long</span>
+                        </div>
+                        <button class="btn btn-primary">Inquire Now</button>
+                    </div>
+                </div>
+                
+                <div class="product-item" data-category="basmati">
+                    <img src="assets/products/1509basmati.jpg" alt="1509 Basmati Rice" class="product-image">
+                    <div class="product-info">
+                        <h3>1509 Basmati Rice</h3>
+                        <p>Premium, long-grain basmati with soft texture and shorter cooking time.</p>
+                        <div class="product-specs">
+                            <span class="spec">Origin: India</span>
+                            <span class="spec">Texture: Soft</span>
+                        </div>
+                        <button class="btn btn-primary">Inquire Now</button>
+                    </div>
+                </div>
+                
+                <div class="product-item" data-category="basmati">
+                    <img src="assets/products/pusabasmati.jpg" alt="Pusa Basmati Rice" class="product-image">
+                    <div class="product-info">
+                        <h3>Pusa Basmati Rice</h3>
+                        <p>Hybrid aromatic basmati, popular in the US, Canada, and Gulf countries.</p>
+                        <div class="product-specs">
+                            <span class="spec">Origin: India</span>
+                            <span class="spec">Aroma: Strong</span>
+                        </div>
+                        <button class="btn btn-primary">Inquire Now</button>
+                    </div>
+                </div>
+                
+                <!-- Non-Basmati Rice Products -->
+                <div class="product-item" data-category="non-basmati">
+                    <img src="assets/products/IR6436%20non.jpg" alt="Parboiled Rice (IR 64, IR 36)" class="product-image">
+                    <div class="product-info">
+                        <h3>Parboiled Rice (IR 64, IR 36)</h3>
+                        <p>Non-basmati staple widely demanded in African and Asian markets.</p>
+                        <div class="product-specs">
+                            <span class="spec">Variants: IR 64, IR 36</span>
+                            <span class="spec">Processing: Parboiled</span>
+                        </div>
+                        <button class="btn btn-primary">Inquire Now</button>
+                    </div>
+                </div>
+                
+                <div class="product-item" data-category="non-basmati">
+                    <img src="assets/products/white%20raw%20non.jpg" alt="White Raw Rice" class="product-image">
+                    <div class="product-info">
+                        <h3>White Raw Rice</h3>
+                        <p>Affordable non-basmati rice, widely consumed in the Middle East and Asia.</p>
+                        <div class="product-specs">
+                            <span class="spec">Type: Raw</span>
+                            <span class="spec">Usage: Daily Consumption</span>
+                        </div>
+                        <button class="btn btn-primary">Inquire Now</button>
+                    </div>
+                </div>
+                
+                <div class="product-item" data-category="non-basmati">
+                    <img src="assets/products/broken%20non.jpg" alt="Broken Rice" class="product-image">
+                    <div class="product-info">
+                        <h3>Broken Rice</h3>
+                        <p>Economical non-basmati rice, used in breweries, feed, and food industries.</p>
+                        <div class="product-specs">
+                            <span class="spec">Use: Brewery, Feed, Food</span>
+                            <span class="spec">Type: Non-Basmati</span>
+                        </div>
+                        <button class="btn btn-primary">Inquire Now</button>
+                    </div>
+                </div>
+                
+                <div class="product-item" data-category="non-basmati">
+                    <img src="assets/products/sona%20masoori%20non.jpg" alt="Sona Masoori Rice" class="product-image">
+                    <div class="product-info">
+                        <h3>Sona Masoori Rice</h3>
+                        <p>Lightweight, aromatic non-basmati rice, favored in the US and Southeast Asia.</p>
+                        <div class="product-specs">
+                            <span class="spec">Grain: Medium</span>
+                            <span class="spec">Aroma: Mild</span>
+                        </div>
+                        <button class="btn btn-primary">Inquire Now</button>
+                    </div>
+                </div>
+                
+                <!-- Spices Products -->
+                <div class="product-item" data-category="spices">
+                    <img src="assets/products/chilli.jpg" alt="Chilli" class="product-image">
+                    <div class="product-info">
+                        <h3>Chilli</h3>
+                        <p>India’s most exported spice, adding heat and flavor worldwide.</p>
+                        <div class="product-specs">
+                            <span class="spec">Forms: Whole, Powder, Flakes</span>
+                            <span class="spec">Heat: Varies</span>
+                        </div>
+                        <button class="btn btn-primary">Inquire Now</button>
+                    </div>
+                </div>
+                
+                <div class="product-item" data-category="spices">
+                    <img src="assets/products/turmeric.jpg" alt="Turmeric" class="product-image">
+                    <div class="product-info">
+                        <h3>Turmeric</h3>
+                        <p>Golden spice known for its culinary and medicinal uses.</p>
+                        <div class="product-specs">
+                            <span class="spec">Forms: Whole, Powder</span>
+                            <span class="spec">Color: Golden</span>
+                        </div>
+                        <button class="btn btn-primary">Inquire Now</button>
+                    </div>
+                </div>
+                
+                <div class="product-item" data-category="spices">
+                    <img src="assets/products/cumin.jpg" alt="Cumin" class="product-image">
+                    <div class="product-info">
+                        <h3>Cumin</h3>
+                        <p>Popular aromatic seed used in global cuisines.</p>
+                        <div class="product-specs">
+                            <span class="spec">Forms: Whole, Powder</span>
+                            <span class="spec">Flavor: Earthy</span>
+                        </div>
+                        <button class="btn btn-primary">Inquire Now</button>
+                    </div>
+                </div>
+                
+                <div class="product-item" data-category="spices">
+                    <img src="assets/products/coriander.jpg" alt="Coriander" class="product-image">
+                    <div class="product-info">
+                        <h3>Coriander</h3>
+                        <p>Versatile spice with a fresh, citrusy flavor.</p>
+                        <div class="product-specs">
+                            <span class="spec">Forms: Whole, Powder</span>
+                            <span class="spec">Flavor: Fresh, Citrusy</span>
+                        </div>
+                        <button class="btn btn-primary">Inquire Now</button>
+                    </div>
+                </div>
+                
+                <div class="product-item" data-category="spices">
+                    <img src="assets/products/cardamom.jpg" alt="Cardamom" class="product-image">
+                    <div class="product-info">
+                        <h3>Cardamom</h3>
+                        <p>The “Queen of Spices,” prized for its strong aroma.</p>
+                        <div class="product-specs">
+                            <span class="spec">Types: Green, Black</span>
+                            <span class="spec">Aroma: Strong</span>
+                        </div>
+                        <button class="btn btn-primary">Inquire Now</button>
+                    </div>
+                </div>
+                
+                <div class="product-item" data-category="spices">
+                    <img src="assets/products/ginger.jpg" alt="Ginger (Dry & Powdered)" class="product-image">
+                    <div class="product-info">
+                        <h3>Ginger (Dry & Powdered)</h3>
+                        <p>Widely used in cooking, teas, and medicines.</p>
+                        <div class="product-specs">
+                            <span class="spec">Forms: Dry, Powder</span>
+                            <span class="spec">Usage: Culinary & Medicinal</span>
+                        </div>
+                        <button class="btn btn-primary">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Assurance -->
+    <section class="quality-assurance">
+        <div class="container">
+            <h2>Quality Assurance</h2>
+            <div class="quality-grid">
+                <div class="quality-item">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certified Organic</h3>
+                    <p>All products meet international organic certification standards</p>
+                </div>
+                <div class="quality-item">
+                    <i class="fas fa-microscope"></i>
+                    <h3>Lab Tested</h3>
+                    <p>Rigorous testing ensures product safety and quality</p>
+                </div>
+                <div class="quality-item">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Sustainable Farming</h3>
+                    <p>Products sourced from sustainable farming practices</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="Arya Exporters" class="footer-logo-img">
+                        <h3 data-translate="company_name">Arya Exporters</h3>
+                    </div>
+                    <p>Leading supplier of premium agricultural products worldwide.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Business area, Sikar, 332001, Rajasthan</p>
+                        <p><i class="fas fa-phone"></i> +91 8306894430</p>
+                        <p><i class="fas fa-envelope"></i> support@aryaexporters.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Arya Exporters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/918306894430?text=Hello! I'm interested in your agricultural products." target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    
+    <script>
+        // Product filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const productItems = document.querySelectorAll('.product-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter products
+                    productItems.forEach(item => {
+                        if (category === 'all' || item.getAttribute('data-category') === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

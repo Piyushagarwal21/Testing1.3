@@ -1,0 +1,110 @@
+/* Language Switcher Styles */
+.language-switcher {
+    position: relative;
+    display: inline-block;
+}
+
+.language-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: var(--white);
+    border: 2px solid var(--light-green);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-xs) var(--spacing-md);
+    font-size: var(--font-size-small);
+    font-weight: 500;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: var(--transition);
+    min-width: 140px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232d5a27' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right var(--spacing-xs) center;
+    background-size: 16px;
+    padding-right: var(--spacing-lg);
+}
+
+.language-select:hover {
+    border-color: var(--secondary-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.language-select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(45, 90, 39, 0.1);
+}
+
+.language-select option {
+    background: var(--white);
+    color: var(--text-dark);
+    padding: var(--spacing-xs);
+}
+
+/* Language Switcher Animation */
+.language-switcher {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RTL Support for Arabic */
+[dir="rtl"] .language-select {
+    background-position: left var(--spacing-xs) center;
+    padding-left: var(--spacing-lg);
+    padding-right: var(--spacing-md);
+}
+
+/* Mobile Optimizations */
+@media (max-width: 767px) {
+    .language-select {
+        min-width: 120px;
+        font-size: var(--font-size-small);
+        padding: var(--spacing-xs) var(--spacing-sm);
+        padding-right: var(--spacing-md);
+    }
+    
+    .language-select option {
+        font-size: var(--font-size-small);
+    }
+}
+
+@media (max-width: 480px) {
+    .language-select {
+        min-width: 100px;
+        font-size: var(--font-size-small);
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .language-select {
+        border-width: 3px;
+        border-color: var(--primary-color);
+    }
+    
+    .language-select:hover {
+        border-color: var(--dark-green);
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .language-switcher {
+        animation: none;
+    }
+    
+    .language-select {
+        transition: none;
+    }
+} 
