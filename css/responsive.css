@@ -90,6 +90,54 @@
         gap: var(--spacing-lg);
     }
     
+    /* Our Story Section - Tablet Responsive */
+    .story-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .story-image {
+        order: 1;
+    }
+    
+    .story-text {
+        order: 2;
+    }
+    
+    .image-wrapper {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .section-title-wrapper h2 {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+    
+    .title-underline {
+        margin: 10px auto var(--spacing-md);
+    }
+    
+    .belief-item {
+        padding: var(--spacing-md);
+    }
+    
+    /* Contact Form - Tablet Responsive */
+    .contact-form-container {
+        padding: var(--spacing-xl);
+    }
+    
+    .form-row {
+        gap: var(--spacing-md);
+    }
+    
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+    
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
         gap: var(--spacing-lg);
@@ -151,6 +199,120 @@
         font-size: 2.5rem;
     }
     
+    /* Our Story Section - Mobile Responsive */
+    .story-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .story-image {
+        order: 1;
+    }
+    
+    .story-text {
+        order: 2;
+        text-align: left;
+    }
+    
+    .section-title-wrapper h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .title-underline {
+        margin: 10px auto var(--spacing-md);
+    }
+    
+    .story-intro {
+        font-size: 1rem;
+        padding-left: 12px;
+    }
+    
+    .beliefs-title {
+        font-size: 1.15rem;
+        text-align: center;
+    }
+    
+    .belief-item {
+        padding: var(--spacing-sm);
+    }
+    
+    .belief-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .belief-content h4 {
+        font-size: 1rem;
+    }
+    
+    .belief-content p {
+        font-size: 0.9rem;
+    }
+    
+    .story-closing,
+    .story-final {
+        font-size: 1rem;
+    }
+    
+    /* Contact Form - Mobile Responsive */
+    .contact-form-container {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+    
+    .form-header h2 {
+        font-size: 1.75rem;
+    }
+    
+    .form-header p {
+        font-size: 0.9rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px 14px;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    .form-group label {
+        font-size: 0.9rem;
+    }
+    
+    .contact-form .btn-primary {
+        width: 100%;
+        padding: 14px 32px;
+        justify-content: center;
+    }
+    
+    .checkbox-label {
+        padding: 10px 8px;
+        font-size: 0.9rem;
+    }
+    
+    .checkbox-label input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+    }
+    
+    /* Contact Info Cards */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .contact-card {
+        padding: var(--spacing-lg);
+    }
+    
     .footer-content {
         grid-template-columns: 1fr;
         gap: var(--spacing-lg);
@@ -160,15 +322,24 @@
         justify-content: center;
     }
     
-    .whatsapp-float {
-        bottom: 20px;
-        right: 20px;
+    .floating-contact {
+        bottom: 15px;
+        right: 15px;
+        gap: 10px;
     }
     
-    .whatsapp-link {
-        width: 50px;
-        height: 50px;
-        font-size: 1.5rem;
+    .contact-icon {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .contact-icon i {
+        font-size: 1.25rem;
+    }
+    
+    .contact-icon img {
+        width: 22px;
+        height: 22px;
     }
     
     .nav-logo .logo-text {
@@ -307,7 +478,7 @@
 /* Print Styles */
 @media print {
     .header,
-    .whatsapp-float,
+    .floating-contact,
     .nav-toggle,
     .language-switcher {
         display: none !important;
